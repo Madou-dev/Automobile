@@ -335,49 +335,7 @@ fig0.update_yaxes(
 
 st.plotly_chart(fig0, use_container_width=True)
 
-# fig1 = px.violin(df, x='type_carrosserie', y='prix', color='pertes_normalisees', 
-#              title="Prix en fonction du type de carrosserie")
-# fig1.update_layout(paper_bgcolor=bg_color, plot_bgcolor=bg_color)
-# st.plotly_chart(fig1, use_container_width=True)
 
-
-# fig2 = px.violin(df, x='marque', y='prix', color='marque', 
-#              title="Prix en fonction des marques")
-# fig2.update_layout(paper_bgcolor=bg_color, plot_bgcolor=bg_color)
-# st.plotly_chart(fig2, use_container_width=True)
-
-# fig3 = px.violin(df, x='marque', y='puissance', color='marque', 
-#              title="Puissance en fonction des marques")
-# fig3.update_layout(paper_bgcolor=bg_color, plot_bgcolor=bg_color)
-# st.plotly_chart(fig3, use_container_width=True)
-
-
-# fig4 = px.violin(df, x='consommation_ville_mpg', y='marque', color='marque', 
-#              title="Les marques qui consomment le plus en ville")
-# fig4.update_layout(paper_bgcolor=bg_color, plot_bgcolor=bg_color)
-# st.plotly_chart(fig4, use_container_width=True)
-
-
-# fig5 = px.violin(df, x='consommation_autoroute_mpg', y='marque', color='marque', 
-#              title="Les marques qui consomment le plus en autoroute")
-# fig5.update_layout(paper_bgcolor=bg_color, plot_bgcolor=bg_color)
-# st.plotly_chart(fig5, use_container_width=True)
-
-
-
-
-
-# col_num = df.select_dtypes(include=np.number).columns
-# for col in col_num:
-#     fig = px.violin(df, y = col)
-#     print(col)
-#     st.plotly_chart(fig, use_container_width=True)
-
-# Tres visuel pour les prix par carrosserie
-# fig7 = px.violin(df, x='type_carrosserie', y='prix', color='type_carrosserie', 
-#                  box=True, points="all", hover_data=df.columns,
-#                  title="Distribution détaillee des prix")
-# st.plotly_chart(fig7, use_container_width=True)
 
 st.markdown("---")
 
