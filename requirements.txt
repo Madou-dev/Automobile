@@ -1,8 +1,6 @@
 streamlit
-plotly
 pandas
 numpy
-matplotlib.pyplot
-scipy.stats 
-pearsonr
-spearmanr
+plotly
+matplotlib
+scipy
