@@ -14,9 +14,10 @@ st.header('Automobile dataset')
 
 @st.cache_data
 def load_data ():
-    df =  pd.read_csv('/Users/alphaamadoudiallo/Desktop/data_analysis/data/Automobile_data.csv', na_values='?')
+    df = pd.read_csv('data/Automobile_data.csv', na_values='?')
     df = df.replace("?", np.nan)
-    df = pd.read_csv("/Users/alphaamadoudiallo/Desktop/data_analysis/data/Automobile_data.csv", na_values="?")
+    df = pd.read_csv('data/Automobile_data.csv', na_values='?')
+
     for col in df.columns:
         if df[col].dtypes == 'str':
             print(f'{df[col]} : {df[col].unique()}')
