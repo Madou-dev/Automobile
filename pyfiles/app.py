@@ -348,7 +348,7 @@ with tab1:
         pie_data.columns = ["carrosserie", "count"]
         fig = px.pie(pie_data, names="carrosserie", values="count", hole=0.6,
                      color_discrete_sequence=["#ff4d4d","#ff9900","#4daaff","#a855f7","#22d3ee"])
-        fig.update_traces(textposition='outside', textinfo='percent+label',
+        fig.update_traces(textposition='outside', textinfo='percent+label', insidetextorientation='radial',
                           marker=dict(line=dict(color=T["pie_line"], width=2)))
         apply_theme(fig, "Répartition par carrosserie")
         st.plotly_chart(fig, use_container_width=True)
